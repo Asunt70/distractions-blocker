@@ -5,6 +5,8 @@ What I wanted was an extension that **doesn't** let me unblock sites. Most block
 
 This one doesn't.
 
+https://github.com/user-attachments/assets/0732fb71-5b1b-44b9-9f28-f332f07ada8a
+
 ## Contributing
 
 Right now, this only works with **Chrome**, or any Chromium-based browser.  
