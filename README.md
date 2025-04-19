@@ -1,17 +1,28 @@
-Distractions Blocker
+# Distractions Blocker
 
-I mainly created this to the purpose of not wasting time in dumb website as can be social media etc. For what i prefer, i wanted an extension that doesnt allow me to unblock sites,
-normally they allow u, making u go to the same stuff again.
+I mainly created this to stop myself from wasting time on dumb websites—social media and similar garbage.  
+What I wanted was an extension that **doesn't** let me unblock sites. Most blockers do, which just sends you right back into the same trap.
 
-Contributing
-right know, it just has chrome support, or well it was created with chrome objetive mainly. i haven't published it yet to the chrome web store cuz i had to play lol.
-that's why im sharing it with you here.
-so here's a thing u can contribute with
+This one doesn't.
 
-- more browsers support
-- that's it
+## Contributing
 
-if u want to change aesthethics, that is up to you, in blocked.html u can change it with the desired message, maybe making that accesible to non coders user so that they can change it might be good
+Right now, this only works with **Chrome**, or any Chromium-based browser.  
+I haven’t published it to the Chrome Web Store yet because... I had to play some League.
+
+So I’m sharing it here instead. If you want to contribute, here’s what you can do:
+
+- Add support for other browsers (Firefox, Edge, etc.)
+- That’s it, really.
+
+If you want to change how it looks, that’s on you.  
+You can edit the message in `blocked.html` to say whatever you want.  
+Might be cool to make that editable without needing to touch code, for non-coder users.
+
+---
+
+Built for myself. Shared for anyone who also needs to get their crap together.
+
 
 # Installation Guide: Installing the Extension Locally
 
