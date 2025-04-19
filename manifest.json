@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "blocker",
+  "version": "1.0",
+  "description": "blocks shit",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "storage"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": []
+  }
+}
