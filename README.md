@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/0732fb71-5b1b-44b9-9f28-f332f07ada8a
 ## Contributing
 
 Right now, this only works with **Chrome**, or any Chromium-based browser.  
-I haven’t published it to the Chrome Web Store yet because... I had to play some League.
+I haven’t published it to the Chrome Web Store yet because... I had to pay money lol. but if u wanna to contribute with that reach me out on discord: asunt_
 
 So I’m sharing it here instead. If you want to contribute, here’s what you can do:
 
