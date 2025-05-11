@@ -3,30 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shit blocker</title>
-  </head>
-  <body style="background-color: black; overflow-y: hidden">
-    <main
-      style="
-        width: 100%;
-        height: 100vh;
+    <title>Blocked</title>
+    <style>
+      body {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box;
-      "
-    >
-      <iframe
-        style="border-radius: 5%"
-        width="331"
-        height="589"
-        src="https://www.youtube.com/embed/GcZwwJz1zEw"
-        title="real"
-        frameborder="1"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </main>
+        height: 100vh;
+        background-color: #000000;
+        margin: 0;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      #message {
+        font-size: 40px;
+        text-align: center;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="message">get back to work.</span>
   </body>
 </html>

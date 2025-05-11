@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to "Be Mindfull</title>
+    <style>
+      body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #message {
+        font-size: 40px;
+        text-align: center;
+        word-wrap: break-word;
+      }
+      #subtext {
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+        color: rgb(90, 164, 157);
+      }
+      #link,
+      #support {
+        color: rgb(44, 154, 154);
+        transition: 150ms all ease-in-out;
+      }
+      #link:hover,
+      #support:hover {
+        color: turquoise;
+      }
+      #features {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.3rem;
+      }
+      #features label {
+        color: rgb(90, 164, 157);
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .support-links {
+        font-size: 1.6rem;
+        padding: 1rem;
+      }
+      @keyframes levitate {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-4px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      #support {
+        animation: levitate 2s ease-in-out infinite;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span id="message">Welcome to Mindfull Sites!</span>
+      <div id="subtext">Your productivity extension is ready to use.</div>
+    </div>
+    <div>
+      <div class="support-links">
+        <p>
+          I've created this extension to avoid wasting time in what doesn't
+          matters! if you want to support me, you can buy me a coffee through
+          <a
+            id="support"
+            href="https://paypal.me/MFigueroaBarco?country.x=VE&locale.x=es_XC"
+            target="_blank"
+            rel="noopener noreferrer"
+            >paypal</a
+          >
+          or
+          <a
+            id="support"
+            href="https://ko-fi.com/sebastianfigueroa80075"
+            target="_blank"
+            rel="noopener noreferrer"
+            >kofi</a
+          >
+        </p>
+      </div>
+      <ul id="features">
+        <label for="features">Features</label>
+        <li>You can block any page you want!</li>
+        <li>
+          When it's block you can't undo this, unless you uninstall the
+          extension, so choose wisely which website you want to block
+        </li>
+        <li>
+          I don't collect any data from this extension, all data is local
+          stored, and you can see the source code in this
+          <a
+            id="link"
+            href="http://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >link</a
+          >
+          , give it a star on github!
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

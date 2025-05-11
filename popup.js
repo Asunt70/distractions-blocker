@@ -1,15 +1,16 @@
 const siteInput = document.getElementById("siteInput");
+const blockBtn = document.getElementById("blockBtn");
+const showBtn = document.getElementById("showBtn");
+const siteList = document.getElementById("siteList");
+const status = document.getElementById("status");
+const tempMessage = document.getElementById("tempMessage");
 
+// Press Enter in site input triggers block
 siteInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     blockBtn.click();
   }
 });
-
-const blockBtn = document.getElementById("blockBtn");
-const showBtn = document.getElementById("showBtn");
-const siteList = document.getElementById("siteList");
-const status = document.getElementById("status");
 
 blockBtn.addEventListener("click", () => {
   const site = siteInput.value.trim();
@@ -30,9 +31,15 @@ blockBtn.addEventListener("click", () => {
       if (chrome.runtime.lastError) {
         status.textContent = "Failed to save site.";
       } else {
-        status.textContent = "";
         siteInput.value = "";
-        loadSites(); // refresh the list
+        loadSites();
+
+        // Show temporary success message
+        tempMessage.textContent = "Site blocked";
+        tempMessage.style.display = "block";
+        setTimeout(() => {
+          tempMessage.style.display = "none";
+        }, 2000);
       }
     });
   });
@@ -43,7 +50,7 @@ let isVisible = false;
 showBtn.addEventListener("click", () => {
   isVisible = !isVisible;
   siteList.style.display = isVisible ? "block" : "none";
-  showBtn.textContent = isVisible ? "hide sites" : "show sites";
+  showBtn.textContent = isVisible ? "Hide Sites" : "Show Sites";
 
   if (isVisible) {
     loadSites();
